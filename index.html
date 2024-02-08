@@ -17,6 +17,35 @@
     </div>
     <img src="images/museum.jpg" alt="placeholder">
 
+      <div class="container">
+          <section>
+              <img srcset="images/museum-960_x_480.jpg 320w,
+               images/museum-960_x_480.jpg 640w,
+               images/museum-960_x_480.jpg 1024w"
+              sizes="
+              (max-width: 320px) 320px,
+              (max-width: 640px) 640px,
+              (max-width: 960px) 960px"
+              src="images/museum-960_x_480.jpg" alt="placeholder"/>
+          </section>
+          <section>
+            <img srcset="images/museum-960_x_1140.jpg 960w,
+             images/museum-960_x_1140.jpg 1140w"
+            sizes="
+            (max-width: 320px) 960px,
+            (max-width: 640px) 1140px,"
+            src="images/museum-960_x_480.jpg" alt="placeholder"/>
+        </section>
+          <section>
+              <picture>
+                  <source srcset="images/museum-960_x_480.jpg"
+                  media="(min-width:900px)"/>
+                  <source srcset="images/museum-640_x_960.jpg"
+                  media="(min-width:640px)"/>
+              </picture>
+          </section>
+      </div>
+
   </header>
 </body>
 
